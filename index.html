@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Fitness Tracker</h1>
+
+    <form id="fitnessForm">
+        <input type="text" id="activity" placeholder="Activity Name" required>
+        <input type="number" id="steps" placeholder="Steps" required>
+        <input type="number" id="calories" placeholder="Calories Burned" required>
+        <button type="submit">Add Activity</button>
+    </form>
+
+    <h2>Today's Activities</h2>
+    <ul id="activityList"></ul>
+
+    <div class="summary">
+        <h2>Summary</h2>
+        <p>Total Steps: <span id="totalSteps">0</span></p>
+        <p>Total Calories: <span id="totalCalories">0</span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
